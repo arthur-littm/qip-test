@@ -1,0 +1,85 @@
+.card {
+  margin: 0 auto;
+  height: 180px;
+  width: 195px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(4,1,67,0.09), 0 4px 16px 4px rgba(10,35,75,0.09);
+  border-radius: 6px;
+}
+.card-share {
+  position: absolute;
+  right: -15px;
+  top: 10px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  background-color: #4A58E2;
+  box-shadow: 0 2px 4px 0 rgba(4,1,67,0.09), 0 4px 16px 4px rgba(10,35,75,0.09);
+}
+
+.card-share img {
+  width: 20px;
+}
+
+.card-share-links {
+  position: absolute;
+  right: -15px;
+  top: 60px;
+  height: 80px;
+  width: 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(4,1,67,0.09);
+}
+
+.share-container {
+  .card-share-links {
+    visibility: hidden
+  }
+  &:hover {
+    .card-share-links {
+      visibility: visible;
+    }
+  }
+}
+
+.card-share-links i {
+  margin: 5px auto;
+  color: #FFF
+}
+.bg-facebook:hover {
+  color: #3b5998;
+}
+.bg-twitter:hover {
+ color: #55ACEE;
+}
+.bg-pinterest:hover {
+ color: #C92228;
+}
+
+
+.card-link:hover{
+  opacity: 0.1;
+}
+
+.card-action {
+  width: 180px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px auto;
+  border: 0.5px solid #BDBDBD;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.card-action a {
+  color: #BDBDBD;
+  text-decoration: none;
+}
