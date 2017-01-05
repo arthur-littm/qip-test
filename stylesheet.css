@@ -37,17 +37,11 @@
   justify-content: center;
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(4,1,67,0.09);
+  visibility: hidden;
 }
 
-.share-container {
-  .card-share-links {
-    visibility: hidden
-  }
-  &:hover {
-    .card-share-links {
-      visibility: visible;
-    }
-  }
+.share-container:hover .card-share-links {
+  visibility:visible;
 }
 
 .card-share-links i {
